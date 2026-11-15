@@ -8,8 +8,8 @@ Which loan terms, product categories and installment stages are linked to late r
 
 [**View the live dashboard**](https://datastudio.google.com/reporting/34a461da-e811-4b1b-9c75-2c6d505434db/page/cx8CG) · [PDF version](docs/dashboard.pdf)
 
-![Dashboard, top](docs/dashboard_top.png)
-![Dashboard, bottom](docs/dashboard_bottom.png)
+![Dashboard, top](docs/dashboard_top.jpg)
+![Dashboard, bottom](docs/dashboard_bottom.jpg)
 
 ---
 
