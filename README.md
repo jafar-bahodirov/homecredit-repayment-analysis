@@ -20,7 +20,27 @@ Late payment on these loans is common but usually mild: 8.8% of installments are
 The strongest pattern is not who the borrower is or how long the loan runs, but **where in the loan the payment falls**. The late rate rises from 3.4% at the first installment to 15.1% at the twelfth or later, and the same rise appears within 12-month loans alone (3.3% to 18.4%), so it is not an artifact of mixing loan lengths.
 
 Loan term carries little signal — the large term groups all sit between 7.0% and 9.2%. Product category varies moderately, from 10.1% for Mobile down to 5.1% for Jewelry.
+---
 
+## Who this helps
+
+**Collections or CRM** — deciding when to contact a borrower. Most late payers are only a few days late, so the lever is a reminder *before* the due date, not a chase after it.
+
+**Risk or portfolio** — deciding what to monitor. The late rate roughly quadruples between a loan's first and twelfth installment, so monitoring should be keyed to loan stage rather than to a portfolio average.
+
+**Credit policy** — deciding what belongs in approval rules. Loan term carries almost no signal and category only a little. A useful negative result: it stops a team building rules on variables that will not hold.
+
+The data is Home Credit's anonymized Kaggle release, covering point-of-sale installment loans — goods bought in a shop and repaid in fixed monthly installments.
+
+---
+
+## Can this run on another lender's data?
+
+**Yes.** Any lender with an installment book can run this on their own portfolio.
+
+The pipeline reads six fields: loan ID, term, product category, installment number, due date, payment date. Every metric derives from those, with no assumption about country, currency, ticket size or product mix. To adapt it, change the six column names in `sql/01_views.sql` and run the notebook.
+
+The code transfers; the numbers do not. An 8.8% late rate is a fact about this portfolio, not a benchmark.
 ---
 
 ## Definitions
